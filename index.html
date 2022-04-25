@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+    <link rel = "stylesheet" href = "styles.css">
+    <script src = "script.js" defer></script>
+    <title>Ro Shambo!</title>
+</head>
+<body>
+    <header class = "header">
+        <h1 class = "title">Ro Shambo!</h1>
+    </header>
+    <main class = "main">
+        <div class = "scoreboard">
+            <h2 class = "score-info" id = "score-info">Shoot!</h2>
+            <h3 class = "score-message" id = "score-message">
+                First to score 5 points wins the game
+            </h3>
+            <div class = "scores-container">
+                <div class = "score-box">
+                    <div class = "sign" id = "player-sign">❔</div>
+                    <p class = "score" id = "player-score">Player: 0</p>
+                </div>
+                <div class = "score-box">
+                    <div class = "sign" id = "computer-sign">❔</div>
+                    <p class = "score" id = "computer-score">Computer: 0</p>
+                </div>
+            </div>
+        </div>
+        <div class = "buttons">
+            <button class = "btn btn-square" id = "rock-btn">
+                <div class = "sign">✊🏾</div>
+            </button>
+            <button class = "btn btn-square" id = "paper-btn">
+                <div class = "sign">🖐🏾</div>
+            </button>
+            <button class = "btn btn-square" id = "scissors-btn">
+                <div class = "sign">✌🏾</div>
+            </button>
+        </div>
+    </main>
+    <div class = "modal" id = "endgame-modal">
+        <p class = "modal-title" id = "endgame-msg"></p>
+        <button class = "btn btn-restart" id = "restart-btn">Play Again?</button>
+    </div>
+    <div class = "overlay" id = "overlay"></div>
+</body>
+</html>
